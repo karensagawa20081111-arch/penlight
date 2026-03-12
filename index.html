@@ -18,7 +18,27 @@ font-family:sans-serif;
 background:black;
 transition:background 0.5s;
 }
+
+button{
+font-size:28px;
+padding:20px 40px;
+border:none;
+border-radius:15px;
+background:#ff66cc;
+color:white;
+}
 </style>
+
+</head>
+
+<body>
+
+<div id="startArea">
+<button onclick="startShow()">ペンライトSTART</button>
+<br><br>
+スマホをペンライトにしてください✨<br>
+明るさを最大に！
+</div>
 
 <script>
 
@@ -26,43 +46,40 @@ function changeColor(color){
 document.body.style.background=color;
 }
 
+function startShow(){
+
+document.getElementById("startArea").style.display="none"
+
 //最初 全員
-setTimeout(()=>changeColor("white"),0)
+changeColor("white")
 
 //会いにkite
-setTimeout(()=>changeColor("#ff0000"),33000)   //❤️
-setTimeout(()=>changeColor("#7fe8ff"),43000)   //🩵
-setTimeout(()=>changeColor("#0066ff"),53000)   //💙
-setTimeout(()=>changeColor("#ff7ccf"),63000)   //🩷
-setTimeout(()=>changeColor("#a64cff"),75000)   //💜
-setTimeout(()=>changeColor("white"),86000)     //全員
+setTimeout(()=>changeColor("#ff0000"),33000)
+setTimeout(()=>changeColor("#7fe8ff"),43000)
+setTimeout(()=>changeColor("#0066ff"),53000)
+setTimeout(()=>changeColor("#ff7ccf"),63000)
+setTimeout(()=>changeColor("#a64cff"),75000)
+setTimeout(()=>changeColor("white"),86000)
 
 //かわいいだけじゃだめですか？
-setTimeout(()=>changeColor("#ff0000"),119000)  //❤️
+setTimeout(()=>changeColor("#ff0000"),119000)
 
 //金曜日のおはよう
-setTimeout(()=>changeColor("#0066ff"),139000)  //💙
+setTimeout(()=>changeColor("#0066ff"),139000)
 
-//らぶきゅん♡ウォンテッド
-setTimeout(()=>changeColor("#a64cff"),241000)  //💜
+//らぶきゅん
+setTimeout(()=>changeColor("#a64cff"),241000)
 
-//クリティカル♡ぷりちー
-setTimeout(()=>changeColor("#ff7ccf"),328000)  //🩷
+//クリティカル
+setTimeout(()=>changeColor("#ff7ccf"),328000)
 
-//君セン！
-setTimeout(()=>changeColor("#7fe8ff"),428000)  //🩵
-setTimeout(()=>changeColor("white"),486000)    //全員
+//君セン
+setTimeout(()=>changeColor("#7fe8ff"),428000)
+setTimeout(()=>changeColor("white"),486000)
+
+}
 
 </script>
-
-</head>
-
-<body>
-
-<div>
-スマホをペンライトにしてください✨<br>
-明るさを最大に！
-</div>
 
 </body>
 </html>
